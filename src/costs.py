@@ -19,8 +19,14 @@ COMPONENTS = [
 
 
 def load_calls() -> pd.DataFrame:
-    """Local ledger (mirrors the Supabase api_calls table, which scripts keep in sync)."""
-    df = pd.DataFrame(ledger.rows())
+    """Local ledger when present; otherwise (e.g. a cloud deployment) the Supabase api_calls table it syncs to."""
+    rows = ledger.rows()
+    if not rows:
+        from . import db
+        rows = db.api_calls()
+    df = pd.DataFrame(rows)
+    if not df.empty:
+        df["cost_usd"] = df["cost_usd"].astype(float)
     if df.empty:
         return pd.DataFrame(columns=["component", "kind", "cost_usd", "org_id", "model", "ref",
                                      "input_tokens", "output_tokens", "cache_write_tokens", "cache_read_tokens"])

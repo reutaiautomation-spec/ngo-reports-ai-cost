@@ -148,3 +148,13 @@ def sync_ledger() -> int:
     for i in range(0, len(payload), 200):
         sb().table("api_calls").upsert(payload[i:i + 200], on_conflict="uid").execute()
     return len(payload)
+
+
+def api_calls() -> list[dict]:
+    """The synced ledger, for deployments that don't have the local JSONL file."""
+    out, page = [], 1000
+    while True:
+        batch = sb().table("api_calls").select("*").order("id").range(len(out), len(out) + page - 1).execute().data
+        out += batch
+        if len(batch) < page:
+            return out
