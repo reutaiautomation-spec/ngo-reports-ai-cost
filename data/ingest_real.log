@@ -1,0 +1,33 @@
+spni: 3 documents
+document tokens (Sonnet tokenizer): total 78,327, mean 26,109, min 4,816, max 46,700
+extraction input 82,510 tokens, worst case $0.0064
+[budget] extraction + embeddings: estimate $0.0164, spent so far $1.5048, stop line $4.00
+[batch] ingest_extract_real: submitted msgbatch_01LxvCm9DFHSCZw2Ys6mCZsa (3 requests)
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+[batch] ingest_extract_real: processing=3 succeeded=0 errored=0
+
+doc                          tokens  chunks  extract$   embed$    total$
+spni__2024_activity_report    26811      68  0.001945  0.001192  0.003137
+spni__2025_activity_brief      4816      11  0.000643  0.000212  0.000855
+spni__2025_activity_report    46700     101  0.002858  0.002024  0.004882
+
+3 docs | extraction $0.0054 + embeddings $0.0034 = $0.0089 | per doc $0.002958 | chunks 180
+ledger rows synced to Supabase: 693

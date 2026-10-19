@@ -1,0 +1,9 @@
+[budget] org cards: estimate $0.4500, spent so far $1.5137, stop line $4.00
+
+spni: 3 docs, resuming from version 0
+  v1  spni__2024_activity_report in= 27875 out= 1840 $0.00373 | naive in=  27865 $0.0741 | middle $0.0371 | card 450 words
+  v2  spni__2025_activity_brief  in=  7715 out= 2633 $0.00200 | naive in=  32717 $0.0918 | middle $0.0459 | card 637 words
+  v3  spni__2025_activity_report in= 50391 out= 3667 $0.00678 | naive in=  79452 $0.1956 | middle $0.0978 | card 884 words
+
+3 updates | actual $0.0125 (avg $0.00417/update) | naive $0.3615 | middle $0.1807 | max card 884 words | compactions 0
+ledger rows synced: 702

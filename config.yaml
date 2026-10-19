@@ -1,0 +1,41 @@
+budget:
+  hard_limit_usd: 5.0     # תקרת התקציב של כל ההדגמה
+  stop_at_usd: 4.0        # עוצרים ומתייעצים לפני שמתקרבים לתקרה
+
+data:
+  synthetic_dir: data/synthetic
+  ledger_file: data/ledger/api_calls.jsonl
+  words_per_page: 400     # עמוד A4 בעברית, בערך
+
+chunking:
+  target_tokens: 600
+  chars_per_token: 1.44   # measured on the Hebrew corpus (Claude tokenizer)
+  overlap_tokens: 80
+
+embeddings:
+  dimension: 1024
+  throttle: true                    # Voyage without payment method: 3 RPM, 10K TPM
+  max_tokens_per_request: 8000
+  min_seconds_between_requests: 50  # 8K tokens per request -> stays under 10K TPM
+
+rag:
+  report_k: 9             # קטעים לדוח
+  chat_k: 6               # קטעים לתשובת צ'אט
+
+card:
+  max_words: 1500
+  target_words: 1200      # what the prompt aims for
+  compact_to_words: 1100  # when a card exceeds max_words, a compaction call shrinks it to this
+
+# השוואת ביניים: Sonnet עם המסמכים המלאים (בלי RAG/כרטיס), אבל עם Batch ו־caching היכן שזה ריאלי
+middle:
+  batch_components: [finance, card, report]   # עבודה אסינכרונית — מתאים ל־Batch
+  chat_questions_per_session: 5               # שאלות שנשאלות ברצף (בתוך 5 דקות) — רק הן נהנות מהמטמון
+
+# ברירות מחדל למסך התחזית (ניתנים לשינוי בממשק)
+forecast:
+  orgs: 1000
+  months: 12
+  docs_per_month: 10
+  reports_per_month: 1
+  questions_per_month: 20

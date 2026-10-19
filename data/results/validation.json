@@ -1,0 +1,64 @@
+{
+  "org_id": "environment",
+  "rows": [
+    {
+      "component": "finance",
+      "est_input": 2280,
+      "real_input": 2280,
+      "input_diff_pct": 0.0,
+      "assumed_output": 474,
+      "real_output": 1252,
+      "est_cost": 0.0093,
+      "real_cost": 0.01708,
+      "cost_diff_pct": 83.7,
+      "note": "first estimate omitted the JSON schema (1,632 tokens); fixed in llm.count_tokens"
+    },
+    {
+      "component": "card",
+      "est_input": 79068,
+      "real_input": 79068,
+      "input_diff_pct": 0.0,
+      "assumed_output": 6414,
+      "real_output": 6944,
+      "est_cost": 0.222276,
+      "real_cost": 0.227576,
+      "cost_diff_pct": 2.4
+    },
+    {
+      "component": "report",
+      "est_input": 80507,
+      "real_input": 80507,
+      "input_diff_pct": 0.0,
+      "assumed_output": 3488,
+      "real_output": 4876,
+      "est_cost": 0.195894,
+      "real_cost": 0.209774,
+      "cost_diff_pct": 7.1
+    },
+    {
+      "component": "chat",
+      "est_input": 78370,
+      "real_input": 78370,
+      "input_diff_pct": 0.0,
+      "assumed_output": 61,
+      "real_output": 554,
+      "est_cost": 0.15735,
+      "real_cost": 0.16227999999999998,
+      "cost_diff_pct": 3.1
+    }
+  ],
+  "finance_accuracy": {
+    "checked": 36,
+    "wrong": []
+  },
+  "report_quality": {
+    "naive_score": 95.6,
+    "naive_unsupported": [
+      "160,000",
+      "36,000",
+      "25%"
+    ],
+    "correct_score": 100.0
+  },
+  "chat_answer": "לפי עדכון ההשפעה מינואר 2025, ב־2024 הוקמו 6 גינות קהילתיות חדשות, וסך הגינות בליווי העמותה הגיע ל־27 [עדכון השפעה — ירוק מקומי, 2025-01].\n\nהערה: בדוח השנתי ל־2025 מצוין כי בשנת 2025 פעלו 14 גינות בליווי העמותה, מתוכן שתיים חדשות [דוח מילולי שנתי לשנת 2025 — ירוק מקומי]. המספר הזה שונה מ־27, והמסמכים אינם מסבירים את הפער. הדוח השנתי ל־2024 עצמו אינו כולל נתון על מספר הגינות."
+}

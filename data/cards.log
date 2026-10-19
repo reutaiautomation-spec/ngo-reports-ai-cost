@@ -1,0 +1,64 @@
+[budget] org cards: estimate $0.4500, spent so far $0.5078, stop line $4.00
+
+education: 9 docs, resuming from version 0
+  v1  education__ga2024          in= 12407 out= 1984 $0.00214 | naive in=  12397 $0.0446 | middle $0.0223 | card 463 words
+  v2  education__ar2023          in= 15962 out= 2882 $0.00295 | naive in=  25352 $0.0795 | middle $0.0398 | card 669 words
+  v3  education__bp2024b         in= 10609 out= 4079 $0.00301 | naive in=  32055 $0.1049 | middle $0.0524 | card 929 words
+  v4  education__iu2024b         in= 10079 out= 4557 $0.00320 | naive in=  37032 $0.1196 | middle $0.0598 | card 1040 words
+  v5  education__ar2024          in= 18582 out= 6386 $0.00496 | naive in=  50034 $0.1639 | middle $0.0820 | card 1474 words
+  v6  education__bp2025a         in= 12312 out= 7365 $0.00709 | naive in=  54936 $0.1835 | middle $0.0918 | card 684 words (compacted from 1692)
+  v7  education__ga2025          in= 17410 out= 3371 $0.00334 | naive in=  68325 $0.1704 | middle $0.0852 | card 769 words
+  v8  education__iu2025          in=  9514 out= 3653 $0.00269 | naive in=  73445 $0.1834 | middle $0.0917 | card 837 words
+  v9  education__ar2025          in= 18378 out= 4520 $0.00401 | naive in=  87147 $0.2195 | middle $0.1097 | card 1055 words
+
+elderly: 10 docs, resuming from version 0
+  v1  elderly__bp2024a           in=  6789 out= 2092 $0.00164 | naive in=   6778 $0.0345 | middle $0.0172 | card 473 words
+  v2  elderly__ar2023            in= 15506 out= 2174 $0.00255 | naive in=  19169 $0.0601 | middle $0.0300 | card 497 words
+  v3  elderly__bp2024b           in=  8679 out= 3594 $0.00258 | naive in=  24650 $0.0852 | middle $0.0426 | card 817 words
+  v4  elderly__iu2024b           in=  9511 out= 4283 $0.00300 | naive in=  29544 $0.1019 | middle $0.0510 | card 988 words
+  v5  elderly__ar2024            in= 17851 out= 5012 $0.00420 | naive in=  42089 $0.1343 | middle $0.0671 | card 1142 words
+  v6  elderly__bp2025a           in= 10977 out= 6276 $0.00415 | naive in=  47030 $0.1568 | middle $0.0784 | card 1417 words
+  v7  elderly__ga2025            in= 19819 out= 6892 $0.00772 | naive in=  59550 $0.1880 | middle $0.0940 | card 758 words (compacted from 1557)
+  v8  elderly__iu2025            in=  9138 out= 3832 $0.00274 | naive in=  64346 $0.1670 | middle $0.0835 | card 876 words
+  v9  elderly__bp2026a           in= 11272 out= 5720 $0.00390 | naive in=  70762 $0.1987 | middle $0.0994 | card 1297 words
+  v10 elderly__ar2025            in= 19848 out= 7036 $0.00906 | naive in=  83867 $0.2381 | middle $0.1190 | card 1326 words (compacted from 1602)
+
+environment: 8 docs, resuming from version 0
+  v1  environment__ar2023        in= 13272 out= 2034 $0.00225 | naive in=  13262 $0.0469 | middle $0.0234 | card 482 words
+  v2  environment__iu2024b       in=  7518 out= 2488 $0.00191 | naive in=  17723 $0.0603 | middle $0.0302 | card 588 words
+  v3  environment__ar2024        in= 19143 out= 3738 $0.00369 | naive in=  33355 $0.1041 | middle $0.0520 | card 856 words
+  v4  environment__bp2025a       in=  9104 out= 4769 $0.00321 | naive in=  37697 $0.1231 | middle $0.0615 | card 1083 words
+  v5  environment__ga2025        in= 20297 out= 5527 $0.00470 | naive in=  52202 $0.1597 | middle $0.0798 | card 1251 words
+  v6  environment__iu2025        in= 11949 out= 5428 $0.00382 | naive in=  57601 $0.1695 | middle $0.0847 | card 1229 words
+  v7  environment__bp2026a       in= 12786 out= 6562 $0.00447 | naive in=  63935 $0.1935 | middle $0.0967 | card 1479 words
+  v8  environment__ar2025        in= 22718 out= 6414 $0.00539 | naive in=  79068 $0.2223 | middle $0.1111 | card 1455 words
+
+health: 11 docs, resuming from version 0
+  v1  health__bp2024a            in=  6257 out= 2406 $0.00174 | naive in=   6246 $0.0366 | middle $0.0183 | card 525 words
+  v2  health__ga2024             in= 14184 out= 2613 $0.00264 | naive in=  17001 $0.0601 | middle $0.0301 | card 570 words
+  v3  health__ar2023             in= 14281 out= 3185 $0.00293 | naive in=  27646 $0.0871 | middle $0.0436 | card 702 words
+  v4  health__bp2024b            in=  9215 out= 4293 $0.00298 | naive in=  32652 $0.1082 | middle $0.0541 | card 949 words
+  v5  health__iu2024b            in= 10552 out= 4593 $0.00326 | naive in=  37888 $0.1217 | middle $0.0609 | card 1020 words
+  v6  health__ar2024             in= 20041 out= 6049 $0.00494 | naive in=  52313 $0.1651 | middle $0.0826 | card 1342 words
+  v7  health__bp2025a            in= 12085 out= 7177 $0.00752 | naive in=  57325 $0.1864 | middle $0.0932 | card 908 words (compacted from 1593)
+  v8  health__ga2025             in= 16385 out= 4058 $0.00358 | naive in=  68551 $0.1777 | middle $0.0888 | card 890 words
+  v9  health__iu2025             in=  9671 out= 4518 $0.00314 | naive in=  73141 $0.1915 | middle $0.0957 | card 992 words
+  v10 health__bp2026a            in= 12432 out= 6615 $0.00446 | naive in=  80031 $0.2262 | middle $0.1131 | card 1447 words
+  v11 health__ar2025             in= 22336 out= 7155 $0.00894 | naive in=  94729 $0.2610 | middle $0.1305 | card 1077 words (compacted from 1566)
+
+youth: 12 docs, resuming from version 0
+  v1  youth__bp2024a             in=  8577 out= 2340 $0.00194 | naive in=   8566 $0.0405 | middle $0.0203 | card 530 words
+  v2  youth__ga2024              in= 15807 out= 2722 $0.00285 | naive in=  21010 $0.0692 | middle $0.0346 | card 613 words
+  v3  youth__ar2023              in= 15957 out= 3103 $0.00306 | naive in=  33222 $0.0975 | middle $0.0487 | card 701 words
+  v4  youth__iu2024a             in=  6764 out= 3517 $0.00235 | naive in=  35860 $0.1069 | middle $0.0534 | card 793 words
+  v5  youth__bp2024b             in= 10049 out= 4845 $0.00334 | naive in=  41368 $0.1312 | middle $0.0656 | card 1086 words
+  v6  youth__iu2024b             in= 10661 out= 5501 $0.00373 | naive in=  46161 $0.1473 | middle $0.0737 | card 1238 words
+  v7  youth__ar2024              in= 19655 out= 6533 $0.00514 | naive in=  59292 $0.1839 | middle $0.0920 | card 1476 words
+  v8  youth__bp2025a             in= 12673 out= 5731 $0.00404 | naive in=  64408 $0.1861 | middle $0.0931 | card 1309 words
+  v9  youth__ga2025              in= 21221 out= 5576 $0.00482 | naive in=  78875 $0.2135 | middle $0.1068 | card 1275 words
+  v10 youth__iu2025              in= 11446 out= 6347 $0.00423 | naive in=  83722 $0.2309 | middle $0.1155 | card 1452 words
+  v11 youth__bp2026a             in= 13567 out= 6184 $0.00436 | naive in=  89918 $0.2417 | middle $0.1208 | card 1391 words
+  v12 youth__ar2025              in= 22947 out= 6624 $0.00552 | naive in= 105658 $0.2776 | middle $0.1388 | card 1497 words
+
+50 updates | actual $0.1958 (avg $0.00392/update) | naive $7.2614 | middle $3.6307 | max card 1497 words | compactions 5
+ledger rows synced: 509

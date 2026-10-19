@@ -1,0 +1,38 @@
+# מחירים ושמות מודלים — המקור היחיד לכל חישובי העלות במערכת.
+# מחירים בדולר למיליון טוקנים. נבדק מול התיעוד הרשמי: 2026-10-18.
+#   Claude: https://platform.claude.com/docs/en/about-claude/pricing
+#   Voyage: https://docs.voyageai.com/docs/pricing
+
+checked_at: "2026-10-18"
+
+models:
+  claude-haiku-5-5:
+    provider: anthropic
+    input: 0.10
+    output: 0.50
+    # מעל 100K טוקני קלט בבקשה אחת המחיר עולה
+    long_context_threshold: 100000
+    long_input: 0.50
+    long_output: 2.50
+  claude-sonnet-5-5:
+    provider: anthropic
+    input: 2.00
+    output: 10.00
+  voyage-4:
+    provider: voyage
+    input: 0.06
+    free_tokens: 200000000   # מכסה חינמית — העלות נרשמת לפי המחיר הרשמי בכל מקרה
+
+# מכפילים על מחיר הקלט/הפלט הבסיסי
+modifiers:
+  batch_discount: 0.5        # Batch API: 50% הנחה על כל הטוקנים
+  cache_write_5m: 1.25       # כתיבה למטמון (TTL של 5 דקות)
+  cache_write_1h: 2.0        # כתיבה למטמון (TTL של שעה)
+  cache_read: 0.1            # קריאה מהמטמון
+
+# איזה מודל משמש לכל תפקיד
+roles:
+  simple: claude-haiku-5-5       # חילוץ, כרטיס עמותה, צ'אט, יצירת נתונים סינתטיים
+  report: claude-sonnet-5-5      # הדוח הסופי
+  naive: claude-sonnet-5-5       # כל הגרסאות הנאיביות
+  embeddings: voyage-4

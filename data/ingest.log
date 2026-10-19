@@ -1,0 +1,76 @@
+education: 9 documents
+elderly: 10 documents
+environment: 8 documents
+health: 11 documents
+youth: 12 documents
+document tokens (Sonnet tokenizer): total 443,162, mean 8,863, min 2,602, max 15,699
+extraction input 465,934 tokens, worst case $0.0608
+[budget] extraction + embeddings: estimate $0.0708, spent so far $0.1801, stop line $4.00
+[batch] ingest_extract_v1: already done, loading saved results
+
+doc                          tokens  chunks  extract$   embed$    total$
+education__ga2024             11329      36  0.000953  0.000000  0.000953
+education__ar2023             12914      30  0.001091  0.000487  0.001578
+education__bp2024b             6654      17  0.000845  0.000291  0.001136
+education__iu2024b             4941      13  0.000528  0.000182  0.000711
+education__ar2024             12961      35  0.000951  0.000501  0.001451
+education__bp2025a             4853      13  0.000721  0.000212  0.000933
+education__ga2025             13347      39  0.000952  0.000514  0.001465
+education__iu2025              5084      13  0.000457  0.000185  0.000643
+education__ar2025             13661      32  0.000978  0.000523  0.001501
+elderly__bp2024a               5698      16  0.000824  0.000260  0.001084
+elderly__ar2023               12346      32  0.000988  0.000483  0.001471
+elderly__bp2024b               5428      16  0.000844  0.000248  0.001092
+elderly__iu2024b               4854      13  0.000530  0.000184  0.000714
+elderly__ar2024               12500      36  0.000987  0.000515  0.001502
+elderly__bp2025a               4888      12  0.000809  0.000213  0.001022
+elderly__ga2025               12474      36  0.000914  0.000501  0.001414
+elderly__iu2025                4756      13  0.000422  0.000185  0.000607
+elderly__bp2026a               6363      17  0.000816  0.000294  0.001110
+elderly__ar2025               13060      31  0.001077  0.000528  0.001604
+environment__ar2023           12195      29  0.000886  0.000453  0.001339
+environment__iu2024b           4426      11  0.000444  0.000163  0.000607
+environment__ar2024           15592      40  0.001124  0.000626  0.001751
+environment__bp2025a           4294      13  0.000646  0.000194  0.000840
+environment__ga2025           14464      44  0.001051  0.000569  0.001620
+environment__iu2025            5364      13  0.000463  0.000197  0.000660
+environment__bp2026a           6286      17  0.000928  0.000282  0.001210
+environment__ar2025           15093      39  0.001040  0.000598  0.001639
+health__bp2024a                5169      14  0.000830  0.000236  0.001066
+health__ga2024                10712      28  0.000883  0.000455  0.001339
+health__ar2023                10603      30  0.000866  0.000404  0.001271
+health__bp2024b                4956      14  0.000858  0.000228  0.001087
+health__iu2024b                5199      13  0.000526  0.000192  0.000718
+health__ar2024                14383      37  0.001038  0.000574  0.001612
+health__bp2025a                4962      13  0.000748  0.000219  0.000967
+health__ga2025                11183      33  0.000928  0.000447  0.001375
+health__iu2025                 4553      12  0.000616  0.000171  0.000786
+health__bp2026a                6840      19  0.000916  0.000321  0.001236
+health__ar2025                14656      38  0.001033  0.000577  0.001611
+youth__bp2024a                 7490      18  0.000976  0.000353  0.001329
+youth__ga2024                 12402      37  0.000983  0.000504  0.001486
+youth__ar2023                 12171      31  0.000915  0.000491  0.001406
+youth__iu2024a                 2602       8  0.000362  0.000103  0.000465
+youth__bp2024b                 5459      15  0.000914  0.000247  0.001161
+youth__iu2024b                 4757      11  0.000584  0.000172  0.000757
+youth__ar2024                 13090      37  0.001044  0.000528  0.001572
+youth__bp2025a                 5067      16  0.000736  0.000238  0.000973
+youth__ga2025                 14426      41  0.001064  0.000579  0.001643
+youth__iu2025                  4811      13  0.000505  0.000187  0.000692
+youth__bp2026a                 6147      16  0.000892  0.000281  0.001173
+youth__ar2025                 15699      39  0.001095  0.000638  0.001734
+
+50 docs | extraction $0.0416 + embeddings $0.0175 = $0.0591 | per doc $0.001182 | chunks 1189
+Traceback (most recent call last):
+  File "C:\Users\Or Dazan\Desktop\RagProject\scripts\02_ingest.py", line 83, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Or Dazan\Desktop\RagProject\scripts\02_ingest.py", line 79, in main
+    print(f"ledger rows synced to Supabase: {db.sync_ledger()}")
+                                             ~~~~~~~~~~~~~~^^
+  File "C:\Users\Or Dazan\Desktop\RagProject\src\db.py", line 149, in sync_ledger
+    sb().table("api_calls").upsert(payload[i:i + 200], on_conflict="uid").execute()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Or Dazan\Desktop\RagProject\.venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 96, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': 'there is no unique or exclusion constraint matching the ON CONFLICT specification', 'code': '42P10', 'hint': None, 'details': None}

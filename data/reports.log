@@ -1,0 +1,36 @@
+correct-version input tokens per report: education=11,874, elderly=13,589, environment=14,155, health=12,448, youth=13,888
+worst case $0.366
+[budget] reports batch: estimate $0.3660, spent so far $0.7157, stop line $4.00
+[batch] reports_v1: submitted msgbatch_014PstVnehFxmVrmunEnw8iK (5 requests)
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+[batch] reports_v1: processing=5 succeeded=0 errored=0
+
+org          in      out     actual$  | naive in   naive$  | middle$ | score  facts  unsupported
+education     11874   3718  $0.0307 |   88,758 $0.2147 | $0.1073 |  96.0 5/5   ['1.3%', '75%', '27%', '27%']
+             cache: write=1097 read=0
+elderly       13589   4169  $0.0334 |   85,513 $0.2127 | $0.1064 | 100.0 5/5   []
+             cache: write=0 read=1097
+environment   14155   3488  $0.0306 |   80,507 $0.1959 | $0.0979 | 100.0 5/5   []
+             cache: write=0 read=1097
+health        12448   4205  $0.0325 |   96,350 $0.2347 | $0.1174 |  98.1 5/5   ['60%', '0.3%']
+             cache: write=0 read=1097
+youth         13888   4308  $0.0344 |  107,279 $0.2576 | $0.1288 |  98.3 5/5   ['1%', '20.6%']
+             cache: write=0 read=1097
+ledger rows synced: 568

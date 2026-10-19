@@ -1,0 +1,9 @@
+validation on 'environment': worst case $0.774
+[budget] naive validation runs: estimate $0.7742, spent so far $0.8880, stop line $4.00
+[finance] input est 1,632 vs billed 2,280 (+39.71%) | output assumed 474 vs real 1,252 | cost est $0.0080 vs real $0.0171 (+113.4%)
+[finance] AI numbers: 36/36 correct
+[card] input est 79,068 vs billed 79,068 (+0.0%) | output assumed 6,414 vs real 6,944 | cost est $0.2223 vs real $0.2276 (+2.4%)
+[report] input est 80,507 vs billed 80,507 (+0.0%) | output assumed 3,488 vs real 4,876 | cost est $0.1959 vs real $0.2098 (+7.1%)
+[report] quality: naive 95.6 vs correct 100.0
+[chat] input est 78,370 vs billed 78,370 (+0.0%) | output assumed 61 vs real 554 | cost est $0.1573 vs real $0.1623 (+3.1%)
+ledger rows synced: 675

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "income_2025",
+    "label": "סך ההכנסות ב־2025",
+    "type": "ils",
+    "value": 5177000
+  },
+  {
+    "id": "income_growth_2025",
+    "label": "שינוי בהכנסות 2024→2025 (%)",
+    "type": "pct",
+    "value": 14.5
+  },
+  {
+    "id": "donors_2025",
+    "label": "מספר התורמים ב־2025",
+    "type": "int",
+    "value": 1420
+  },
+  {
+    "id": "largest_grant_2025",
+    "label": "המענק הגדול ביותר ב־2025",
+    "type": "grant",
+    "value": 1065000,
+    "grantor": "עיריית באר שבע"
+  },
+  {
+    "id": "beneficiaries_2025",
+    "label": "מספר המוטבים ב־2025",
+    "type": "int",
+    "value": 745
+  }
+]

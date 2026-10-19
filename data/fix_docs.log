@@ -1,0 +1,68 @@
+4 to regenerate, 34 to extend | input 278,560 | worst $0.091
+[budget] fix document lengths: estimate $0.0914, spent so far $0.0696, stop line $4.00
+[batch] gen_docs_v2_fix: resuming msgbatch_01RGyYC8yCcbjD7iaHjKwKSX
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[batch] gen_docs_v2_fix: processing=38 succeeded=0 errored=0
+[warn] environment__ar2024: hit max_tokens, output truncated
+[warn] education__ga2025: hit max_tokens, output truncated
+[warn] youth__ga2025: hit max_tokens, output truncated
+youth__ar2024              extend ->  3184 words  stop=end_turn
+youth__bp2026a             regen  ->  1463 words  stop=end_turn
+education__iu2025          extend ->  1299 words  stop=end_turn
+health__ar2025             extend ->  3448 words  stop=end_turn
+health__ar2024             extend ->  3419 words  stop=end_turn
+environment__iu2024b       extend ->  1137 words  stop=end_turn
+elderly__ar2023            extend ->  2944 words  stop=end_turn
+health__ga2025             extend ->  2679 words  stop=end_turn
+youth__ga2024              extend ->  2981 words  stop=end_turn
+elderly__iu2024b           extend ->  1237 words  stop=end_turn
+youth__iu2025              extend ->  1236 words  stop=end_turn
+health__iu2025             extend ->  1137 words  stop=end_turn
+youth__ar2023              extend ->  2829 words  stop=end_turn
+elderly__bp2026a           regen  ->  1610 words  stop=end_turn
+elderly__ar2025            extend ->  3138 words  stop=end_turn
+education__ga2024          extend ->  2765 words  stop=end_turn
+youth__ar2025              extend ->  3733 words  stop=end_turn
+education__ar2024          extend ->  3134 words  stop=end_turn
+youth__bp2024a             regen  ->  1870 words  stop=end_turn
+environment__ga2025        extend ->  3490 words  stop=end_turn
+health__ga2024             extend ->  2539 words  stop=end_turn
+education__iu2024b         extend ->  1225 words  stop=end_turn
+elderly__ar2024            extend ->  3052 words  stop=end_turn
+environment__ar2024        extend ->  3792 words  stop=max_tokens
+environment__ar2025        extend ->  3623 words  stop=end_turn
+education__ar2025          extend ->  3282 words  stop=end_turn
+health__ar2023             extend ->  2523 words  stop=end_turn
+elderly__bp2024a           regen  ->  1461 words  stop=end_turn
+health__iu2024b            extend ->  1306 words  stop=end_turn
+environment__ar2023        extend ->  2944 words  stop=end_turn
+elderly__ga2025            extend ->  3040 words  stop=end_turn
+youth__iu2024b             extend ->  1191 words  stop=end_turn
+education__ga2025          extend ->  3289 words  stop=max_tokens
+education__bp2024b         extend ->  1589 words  stop=end_turn
+environment__iu2025        extend ->  1364 words  stop=end_turn
+education__ar2023          extend ->  3120 words  stop=end_turn
+elderly__iu2025            extend ->  1218 words  stop=end_turn
+youth__ga2025              extend ->  3487 words  stop=max_tokens
+cost $0.0630

@@ -1,0 +1,102 @@
+50 documents planned: youth=12, elderly=10, education=9, health=11, environment=8
+input tokens: 112,511 (exact, count_tokens) | likely cost $0.072 | worst case (all max_tokens) $0.125
+[budget] generate synthetic documents: estimate $0.1253, spent so far $0.0000, stop line $4.00
+[batch] gen_docs_v1: submitted msgbatch_018zkFtifiB8vKHDrjozV1LV (50 requests)
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[batch] gen_docs_v1: processing=50 succeeded=0 errored=0
+[warn] elderly__bp2024a: hit max_tokens, output truncated
+[warn] elderly__bp2026a: hit max_tokens, output truncated
+[warn] youth__bp2024a: hit max_tokens, output truncated
+[warn] youth__bp2026a: hit max_tokens, output truncated
+
+doc                         words  target  stop
+education__ar2023            1415    2800  end_turn
+education__ar2024            1642    3200  end_turn
+education__ar2025            1466    4000  end_turn
+education__bp2024b           1196    1600  end_turn
+education__bp2025a           1173    1200  end_turn
+education__ga2024            1180    2400  end_turn
+education__ga2025            2002    2800  end_turn
+education__iu2024b            755    1200  end_turn
+education__iu2025             888    1200  end_turn
+elderly__ar2023              1315    2800  end_turn
+elderly__ar2024              1535    3200  end_turn
+elderly__ar2025              1424    4000  end_turn
+elderly__bp2024a             1340    1200  max_tokens
+elderly__bp2024b             1355    1600  end_turn
+elderly__bp2025a             1176    1200  end_turn
+elderly__bp2026a             1773    1600  max_tokens
+elderly__ga2025              1180    2800  end_turn
+elderly__iu2024b              742    1200  end_turn
+elderly__iu2025               822    1200  end_turn
+environment__ar2023          1503    2800  end_turn
+environment__ar2024          2183    3200  end_turn
+environment__ar2025          1687    4000  end_turn
+environment__bp2025a         1026    1200  end_turn
+environment__bp2026a         1566    1600  end_turn
+environment__ga2025          1402    2800  end_turn
+environment__iu2024b          711    1200  end_turn
+environment__iu2025           844    1200  end_turn
+health__ar2023               1170    2800  end_turn
+health__ar2024               1370    3200  end_turn
+health__ar2025               1765    4000  end_turn
+health__bp2024a              1259    1200  end_turn
+health__bp2024b              1211    1600  end_turn
+health__bp2025a              1240    1200  end_turn
+health__bp2026a              1708    1600  end_turn
+health__ga2024               1209    2400  end_turn
+health__ga2025               1319    2800  end_turn
+health__iu2024b               816    1200  end_turn
+health__iu2025                640    1200  end_turn
+youth__ar2023                1436    2800  end_turn
+youth__ar2024                1489    3200  end_turn
+youth__ar2025                1822    4000  end_turn
+youth__bp2024a               1298    1200  max_tokens
+youth__bp2024b               1342    1600  end_turn
+youth__bp2025a               1216    1200  end_turn
+youth__bp2026a               1765    1600  max_tokens
+youth__ga2024                1272    2400  end_turn
+youth__ga2025                1603    2800  end_turn
+youth__iu2024a                630     800  end_turn
+youth__iu2024b                664    1200  end_turn
+youth__iu2025                 705    1200  end_turn
+
+50/50 docs written | total words 64,250 | output tokens per Hebrew word: 4.10 | cost $0.0696

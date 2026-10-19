@@ -1,0 +1,33 @@
+[
+  {
+    "id": "income_2025",
+    "label": "סך ההכנסות ב־2025",
+    "type": "ils",
+    "value": 1913000
+  },
+  {
+    "id": "income_growth_2025",
+    "label": "שינוי בהכנסות 2024→2025 (%)",
+    "type": "pct",
+    "value": -7.7
+  },
+  {
+    "id": "donors_2025",
+    "label": "מספר התורמים ב־2025",
+    "type": "int",
+    "value": 1040
+  },
+  {
+    "id": "largest_grant_2025",
+    "label": "המענק הגדול ביותר ב־2025",
+    "type": "grant",
+    "value": 574000,
+    "grantor": "הקרן לירושלים"
+  },
+  {
+    "id": "beneficiaries_2025",
+    "label": "מספר המוטבים ב־2025",
+    "type": "int",
+    "value": 3400
+  }
+]

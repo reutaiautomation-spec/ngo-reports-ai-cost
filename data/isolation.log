@@ -1,0 +1,16 @@
+application layer:
+  [app] education    8 foreign questions -> 6 chunks, leaked: none
+  [app] elderly      8 foreign questions -> 6 chunks, leaked: none
+  [app] environment  8 foreign questions -> 6 chunks, leaked: none
+  [app] health       8 foreign questions -> 6 chunks, leaked: none
+  [app] youth        8 foreign questions -> 6 chunks, leaked: none
+database layer:
+  [rls] education    sees only its own rows in 8 tables
+  [rls] elderly      sees only its own rows in 8 tables
+  [rls] environment  sees only its own rows in 8 tables
+  [rls] health       sees only its own rows in 8 tables
+  [rls] youth        sees only its own rows in 8 tables
+  [rls] no org_id in token -> 0 chunks visible
+  [fn] match_chunks without org_id -> rejected ({'message': 'match_chunks: org_id is required', 'code': 'P00...)
+
+RESULT: PASS (0 leaks)
