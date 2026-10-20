@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-10-20T10:10:23+00:00",
+  "batches": [
+    {
+      "label": "gen_docs_v1",
+      "batch_id": "msgbatch_018zkFtifiB8vKHDrjozV1LV",
+      "component": "setup",
+      "created_at": "2026-10-18T16:45:19.728432+00:00",
+      "ended_at": "2026-10-18T16:58:40.586277+00:00",
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "requests_at_anthropic": 50,
+      "ledger_rows_matched": 50,
+      "tokens_at_anthropic": {
+        "input_tokens": 63511,
+        "output_tokens": 264463,
+        "cache_write_tokens": 979,
+        "cache_read_tokens": 47971
+      },
+      "tokens_in_ledger": {
+        "input_tokens": 63511,
+        "output_tokens": 264463,
+        "cache_write_tokens": 979,
+        "cache_read_tokens": 47971
+      },
+      "cost_from_anthropic_usage": 0.069592,
+      "cost_in_ledger": 0.069592,
+      "match": true
+    },
+    {
+      "label": "gen_docs_v2_fix",
+      "batch_id": "msgbatch_01RGyYC8yCcbjD7iaHjKwKSX",
+      "component": "setup",
+      "created_at": "2026-10-18T17:01:05.332192+00:00",
+      "ended_at": "2026-10-18T17:09:19.188586+00:00",
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "requests_at_anthropic": 38,
+      "ledger_rows_matched": 38,
+      "tokens_at_anthropic": {
+        "input_tokens": 234860,
+        "output_tokens": 204050,
+        "cache_write_tokens": 1149,
+        "cache_read_tokens": 42513
+      },
+      "tokens_in_ledger": {
+        "input_tokens": 234860,
+        "output_tokens": 204050,
+        "cache_write_tokens": 1149,
+        "cache_read_tokens": 42513
+      },
+      "cost_from_anthropic_usage": 0.06304,
+      "cost_in_ledger": 0.06304,
+      "match": true
+    },
+    {
+      "label": "ingest_extract_real",
+      "batch_id": "msgbatch_01LxvCm9DFHSCZw2Ys6mCZsa",
+      "component": "ingest",
+      "created_at": "2026-10-19T13:37:53.113557+00:00",
+      "ended_at": "2026-10-19T13:44:31.715778+00:00",
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "requests_at_anthropic": 3,
+      "ledger_rows_matched": 3,
+      "tokens_at_anthropic": {
+        "input_tokens": 78427,
+        "output_tokens": 5706,
+        "cache_write_tokens": 1361,
+        "cache_read_tokens": 2722
+      },
+      "tokens_in_ledger": {
+        "input_tokens": 78427,
+        "output_tokens": 5706,
+        "cache_write_tokens": 1361,
+        "cache_read_tokens": 2722
+      },
+      "cost_from_anthropic_usage": 0.005447,
+      "cost_in_ledger": 0.005447,
+      "match": true
+    },
+    {
+      "label": "ingest_extract_v1",
+      "batch_id": "msgbatch_01J2995y34e1yF6Nfgv9XCwF",
+      "component": "ingest",
+      "created_at": "2026-10-18T17:16:32.196810+00:00",
+      "ended_at": "2026-10-18T17:26:07.452784+00:00",
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "requests_at_anthropic": 50,
+      "ledger_rows_matched": 50,
+      "tokens_at_anthropic": {
+        "input_tokens": 445384,
+        "output_tokens": 75573,
+        "cache_write_tokens": 1361,
+        "cache_read_tokens": 66689
+      },
+      "tokens_in_ledger": {
+        "input_tokens": 445384,
+        "output_tokens": 75573,
+        "cache_write_tokens": 1361,
+        "cache_read_tokens": 66689
+      },
+      "cost_from_anthropic_usage": 0.041581,
+      "cost_in_ledger": 0.041581,
+      "match": true
+    },
+    {
+      "label": "reports_v1",
+      "batch_id": "msgbatch_014PstVnehFxmVrmunEnw8iK",
+      "component": "report",
+      "created_at": "2026-10-18T18:53:24.112619+00:00",
+      "ended_at": "2026-10-18T18:59:42.521059+00:00",
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "requests_at_anthropic": 5,
+      "ledger_rows_matched": 5,
+      "tokens_at_anthropic": {
+        "input_tokens": 60469,
+        "output_tokens": 19888,
+        "cache_write_tokens": 1097,
+        "cache_read_tokens": 4388
+      },
+      "tokens_in_ledger": {
+        "input_tokens": 60469,
+        "output_tokens": 19888,
+        "cache_write_tokens": 1097,
+        "cache_read_tokens": 4388
+      },
+      "cost_from_anthropic_usage": 0.161719,
+      "cost_in_ledger": 0.161719,
+      "match": true
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-10-18",
+      "model": "claude-haiku-5-5",
+      "requests": 284,
+      "batch_requests": 138,
+      "cost_usd": 0.708278,
+      "input_tokens": 2463561,
+      "output_tokens": 1265797,
+      "cache_write_tokens": 5293,
+      "cache_read_tokens": 257521
+    },
+    {
+      "date": "2026-10-18",
+      "model": "claude-sonnet-5-5",
+      "requests": 9,
+      "batch_requests": 5,
+      "cost_usd": 0.778429,
+      "input_tokens": 300694,
+      "output_tokens": 33514,
+      "cache_write_tokens": 1097,
+      "cache_read_tokens": 4388
+    },
+    {
+      "date": "2026-10-19",
+      "model": "claude-haiku-5-5",
+      "requests": 12,
+      "batch_requests": 3,
+      "cost_usd": 0.020573,
+      "input_tokens": 183182,
+      "output_tokens": 14719,
+      "cache_write_tokens": 2357,
+      "cache_read_tokens": 4714
+    }
+  ],
+  "summary": {
+    "claude_spend_usd": 1.50728,
+    "verified_by_batch_usd": 0.341379,
+    "with_request_id_usd": 0,
+    "all_batches_match": true
+  }
+}

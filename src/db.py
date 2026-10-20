@@ -143,7 +143,8 @@ def latest_eval(org_id: str, report_id: int) -> dict | None:
 def sync_ledger() -> int:
     rows = ledger.rows()
     cols = ("uid", "ts", "component", "org_id", "model", "kind", "batch", "input_tokens", "output_tokens",
-            "cache_write_tokens", "cache_read_tokens", "cost_usd", "ref", "note")
+            "cache_write_tokens", "cache_read_tokens", "cost_usd", "ref", "note",
+            "request_id", "message_id", "batch_id")
     payload = [{c: r.get(c) for c in cols} for r in rows]
     for i in range(0, len(payload), 200):
         sb().table("api_calls").upsert(payload[i:i + 200], on_conflict="uid").execute()

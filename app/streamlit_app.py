@@ -18,5 +18,6 @@ pages = [
     st.Page("views/org.py", title="עמותה ודוח", icon="🏢"),
     st.Page("views/chat.py", title="שאלות על עמותה", icon="💬"),
     st.Page("views/how.py", title="איך זה עובד", icon="🧭"),
+    st.Page("views/verify.py", title="אימות המספרים", icon="🔍"),
 ]
 st.navigation(pages).run()

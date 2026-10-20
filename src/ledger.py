@@ -9,6 +9,9 @@ kind:
   middle_estimate   - Sonnet with full documents but with caching + batch (not run)
   naive_validation  - a real naive call, run once per component to validate estimates
   setup             - one-off cost of generating the synthetic data (not part of the comparison)
+
+Real calls also carry Anthropic's own identifiers (request_id for live calls, batch_id for
+batch results, message_id for both) so each row can be traced back to the provider's records.
 """
 from __future__ import annotations
 
@@ -27,7 +30,8 @@ class BudgetExceeded(RuntimeError):
 
 
 def record(*, component: str, org_id: str | None, model: str, kind: str, batch: bool,
-           usage: dict, cost_usd: float, note: str = "", ref: str | None = None) -> dict:
+           usage: dict, cost_usd: float, note: str = "", ref: str | None = None,
+           ids: dict | None = None) -> dict:
     row = {
         "uid": uuid.uuid4().hex,
         "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -40,6 +44,7 @@ def record(*, component: str, org_id: str | None, model: str, kind: str, batch: 
         "cost_usd": round(cost_usd, 8),
         "ref": ref,
         "note": note,
+        **(ids or {}),
     }
     f = path("ledger_file")
     f.parent.mkdir(parents=True, exist_ok=True)
@@ -61,9 +66,12 @@ def rows() -> list[dict]:
     return out
 
 
+def write_all(rs: list[dict]) -> None:
+    path("ledger_file").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rs), encoding="utf-8")
+
+
 def mark_discarded(component: str, ref_prefix: str, note: str) -> int:
     """Re-label a superseded run: still counted as spend, excluded from comparisons."""
-    f = path("ledger_file")
     rs = rows()
     n = 0
     for r in rs:
@@ -71,7 +79,7 @@ def mark_discarded(component: str, ref_prefix: str, note: str) -> int:
             r["kind"] = "discarded" if r["kind"] == "actual" else "discarded_estimate"
             r["note"] = f"{r.get('note') or ''} | {note}".strip(" |")
             n += 1
-    f.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rs), encoding="utf-8")
+    write_all(rs)
     return n
 
 

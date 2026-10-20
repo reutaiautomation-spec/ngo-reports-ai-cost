@@ -116,7 +116,8 @@ def call(req: Req, component: str, kind: str = "actual", note: str = "") -> Resu
     cost = claude_cost(req.model, usage, batch=False)
     _check_stop(req.custom_id, msg.stop_reason)
     ledger.record(component=component, org_id=req.org_id, model=req.model, kind=kind, batch=False,
-                  usage=usage.dict(), cost_usd=cost, note=note, ref=req.custom_id)
+                  usage=usage.dict(), cost_usd=cost, note=note, ref=req.custom_id,
+                  ids={"request_id": msg._request_id, "message_id": msg.id})
     return Result(req.custom_id, _text_of(msg), usage, cost, msg.stop_reason)
 
 
@@ -176,7 +177,8 @@ def run_batch(label: str, reqs: list[Req], component: str, kind: str = "actual",
             cost = claude_cost(req.model, usage, batch=True)
             _check_stop(item.custom_id, msg.stop_reason)
             ledger.record(component=component, org_id=req.org_id, model=req.model, kind=kind, batch=True,
-                          usage=usage.dict(), cost_usd=cost, ref=item.custom_id)
+                          usage=usage.dict(), cost_usd=cost, ref=item.custom_id,
+                          ids={"batch_id": batch_id, "message_id": msg.id})
             res = Result(item.custom_id, _text_of(msg), usage, cost, msg.stop_reason)
             out[item.custom_id] = res
             fh.write(json.dumps({"custom_id": res.custom_id, "text": res.text, "usage": usage.dict(),

@@ -38,6 +38,7 @@ copy .env.example .env      # ומלאו את 4 המפתחות
 .venv\Scripts\python scripts\05_chat.py                 # רכיב 5: 25 שאלות לדוגמה
 .venv\Scripts\python scripts\06_validate_naive.py       # הרצה אמיתית של כל גרסה נאיבית, פעם אחת, על עמותה אחת
 .venv\Scripts\python scripts\07_isolation_check.py      # בדיקת בידוד בין עמותות: בקוד וב־RLS
+.venv\Scripts\python scripts\08_reconcile.py            # התאמת היומן מול Anthropic (חינם): Batch שורה־שורה + סכומים יומיים ל־Console
 .venv\Scripts\python -m pytest -q tests                 # בדיקות יחידה (חישובים, תמחור, evals)
 .venv\Scripts\streamlit run app\streamlit_app.py        # הממשק
 ```
@@ -55,6 +56,9 @@ copy .env.example .env      # ומלאו את 4 המפתחות
 - **נאיבי:** הבקשה הנאיבית נבנית במלואה ונספרת ב־token counting API (חינם). הפלט מונח זהה לפלט של הגרסה הנכונה.
 - **ביניים:** אותה בקשה נאיבית, עם Batch לעבודה אסינכרונית (חישובים, כרטיס, דוח) ו־caching לשאלות ברצף.
 - **אימות:** `06_validate_naive.py` מריץ כל גרסה נאיבית באמת פעם אחת ומשווה הערכה מול חיוב בפועל.
+- **התאמה מול Anthropic:** כל שורה ביומן נושאת את המזהים של Anthropic (`request_id` לקריאה רגילה, `batch_id` ל־Batch,
+  `message_id` לשתיהן). `08_reconcile.py` מוריד מחדש את תוצאות ה־Batch מ־Anthropic ומשווה טוקנים שורה־שורה,
+  ומפיק סכומים יומיים לפי מודל להשוואה עם דפי Usage/Cost ב־Console. התוצאה מוצגת בעמוד "אימות המספרים".
 - **עדכון מחירים:** רק `pricing.yaml`. שום מחיר לא כתוב בקוד.
 
 ## החלפת הנתונים הסינתטיים בנתונים אמיתיים

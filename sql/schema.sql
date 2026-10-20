@@ -128,6 +128,10 @@ create table if not exists api_calls (
 );
 alter table api_calls add column if not exists uid text unique;
 alter table api_calls drop constraint if exists api_calls_ts_component_ref_kind_model_key;
+-- Anthropic's own identifiers, so every row can be traced to the provider's records
+alter table api_calls add column if not exists request_id text;   -- live calls (request-id header)
+alter table api_calls add column if not exists message_id text;   -- msg_...
+alter table api_calls add column if not exists batch_id   text;   -- msgbatch_...
 
 -- ───────────── RLS: עמותה רואה רק את המידע שלה ─────────────
 -- Requests from the app's users carry org_id in their JWT; the policy compares it to each row.
